@@ -79,7 +79,6 @@
   border: 1px solid rgba(253, 172, 52, 0.1);
   border-radius: 12px;
   padding: 24px;
-  cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -194,7 +193,6 @@
   z-index: 1000;
   padding: 20px;
   animation: fadeIn 0.3s ease;
-  cursor: pointer; /* Issue 1 fix: show pointer to indicate clickable overlay */
 }
 
 @keyframes fadeIn {
@@ -266,7 +264,6 @@
   font-weight: 600;
   white-space: nowrap;
   transition: all 0.3s ease;
-  cursor: pointer; /* explicit pointer */
 }
 
 .modal-link-btn:hover {
@@ -281,7 +278,6 @@
   border: none;
   color: #fdac34;
   font-size: 32px;
-  cursor: pointer; /* explicit pointer */
   width: 40px;
   height: 40px;
   display: flex;
