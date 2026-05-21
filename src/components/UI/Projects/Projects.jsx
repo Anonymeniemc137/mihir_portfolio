@@ -114,7 +114,7 @@ function Projects() {
         {
             title: "Urban Harvest Hub",
             category: "backend",
-            link: "https://example.com",
+            link: "#",
             description: "Subscription-based platform connecting urban farmers with fresh produce buyers.",
             details: {
                 overview: "An eCommerce marketplace enabling urban farmers to sell directly to consumers with recurring subscriptions and seasonal box deliveries.",
@@ -182,7 +182,7 @@ function Projects() {
         {
             title: "Portfolio Lab",
             category: "frontend",
-            link: "https://example.com",
+            link: "#",
             description: "Interactive portfolio builder with drag-and-drop layout customisation.",
             details: {
                 overview: "A creative tool allowing designers to build responsive portfolio sites without coding.",
@@ -195,7 +195,7 @@ function Projects() {
         {
             title: "TrendCraft Studio",
             category: "frontend",
-            link: "https://example.com",
+            link: "#",
             description: "Award-winning digital agency landing page with immersive scroll animations.",
             details: {
                 overview: "High-impact landing page for a creative agency, featuring smooth animations and bold typography.",
