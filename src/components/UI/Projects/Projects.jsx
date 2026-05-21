@@ -5,7 +5,7 @@ function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projects = [
-        // Backend Projects
+        // Backend Projects (existing 8 + 1 dummy)
         {
             title: "Rome Foundation",
             category: "backend",
@@ -110,8 +110,22 @@ function Projects() {
                 highlight: "Custom block system reducing content creation time by 50%"
             }
         },
+        // Dummy backend project (1 added to make 9 → 3×3 grid)
+        {
+            title: "Urban Harvest Hub",
+            category: "backend",
+            link: "https://example.com",
+            description: "Subscription-based platform connecting urban farmers with fresh produce buyers.",
+            details: {
+                overview: "An eCommerce marketplace enabling urban farmers to sell directly to consumers with recurring subscriptions and seasonal box deliveries.",
+                contribution: "Built the entire WooCommerce subscription flow, custom order management, and integrated a real-time delivery scheduler.",
+                challenge: "Handling irregular delivery cycles, product availability fluctuations, and multi-vendor inventory sync.",
+                tech: ["WooCommerce", "Subscriptions", "PHP", "React", "Google Maps API"],
+                highlight: "Scalable subscription engine supporting 500+ weekly deliveries"
+            }
+        },
 
-        // Headless CMS / Frontend Projects
+        // Frontend / Headless CMS (existing 4 + 2 dummies)
         {
             title: "Satva Softech",
             category: "frontend",
@@ -163,6 +177,33 @@ function Projects() {
                 tech: ["WordPress", "Custom Design", "Portfolio System", "Professional Presentation"],
                 highlight: "High-end corporate presence converting enterprise clients"
             }
+        },
+        // Dummy frontend projects (2 added to make 6 → 2 rows of 3)
+        {
+            title: "Portfolio Lab",
+            category: "frontend",
+            link: "https://example.com",
+            description: "Interactive portfolio builder with drag-and-drop layout customisation.",
+            details: {
+                overview: "A creative tool allowing designers to build responsive portfolio sites without coding.",
+                contribution: "Developed the entire frontend UI using Webflow’s CMS and custom JavaScript interactions.",
+                challenge: "Creating a truly intuitive drag-and-drop experience while keeping page load times under 2 seconds.",
+                tech: ["Webflow", "JavaScript", "CSS Grid", "Interactions API"],
+                highlight: "98/100 Lighthouse performance score"
+            }
+        },
+        {
+            title: "TrendCraft Studio",
+            category: "frontend",
+            link: "https://example.com",
+            description: "Award-winning digital agency landing page with immersive scroll animations.",
+            details: {
+                overview: "High-impact landing page for a creative agency, featuring smooth animations and bold typography.",
+                contribution: "Designed and implemented the entire frontend using Bricks builder and custom CSS animations.",
+                challenge: "Balancing complex animation sequences with accessibility and mobile performance.",
+                tech: ["Bricks Builder", "CSS Animations", "GSAP", "Accessibility"],
+                highlight: "Featured on Awwwards and CSS Design Awards"
+            }
         }
     ];
 
@@ -188,31 +229,36 @@ function Projects() {
         return (
             <div className="modal-overlay" onClick={onClose}>
                 <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                    <button className="modal-close" onClick={onClose}>×</button>
-                    
+                    {/* Header with title on left, close + visit link side-by-side on right */}
                     <div className="modal-header">
                         <h2>{project.title}</h2>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="modal-link-btn">
-                            Visit Website ↗
-                        </a>
+                        <div className="modal-actions">
+                            <a 
+                                href={project.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="modal-link-btn"
+                            >
+                                Visit Website ↗
+                            </a>
+                            <button className="modal-close" onClick={onClose}>×</button>
+                        </div>
                     </div>
 
                     <div className="modal-body">
+                        {/* ...rest of modal body unchanged... */}
                         <section className="modal-section">
                             <h4>Overview</h4>
                             <p>{project.details.overview}</p>
                         </section>
-
                         <section className="modal-section">
                             <h4>My Contribution</h4>
                             <p>{project.details.contribution}</p>
                         </section>
-
                         <section className="modal-section">
                             <h4>Challenge</h4>
                             <p>{project.details.challenge}</p>
                         </section>
-
                         <section className="modal-section">
                             <h4>Technologies Used</h4>
                             <div className="tech-tags">
@@ -221,7 +267,6 @@ function Projects() {
                                 ))}
                             </div>
                         </section>
-
                         <section className="modal-section highlight-section">
                             <h4>Key Achievement</h4>
                             <p className="highlight-text">✨ {project.details.highlight}</p>
