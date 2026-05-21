@@ -249,9 +249,13 @@
 
 .modal-actions {
   display: flex;
-  align-items: center;
-  gap: 16px; /* spacing between link and close button */
+  align-items: flex-start;
+  gap: 16px; 
   flex-shrink: 0;
+}
+
+.modal-actions a{
+  margin-top: 0px;
 }
 
 .modal-link-btn {
