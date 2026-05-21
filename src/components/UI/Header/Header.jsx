@@ -17,7 +17,7 @@ function Header() {
   };
 
   const handleResumeClick = () => {
-    window.open('src/assets/Resume/mihir-dave-5years-dev-fullstack-resume.pdf', '_blank');
+    window.open('src/assets/Resume/Mihir-Dave-6y-fullstack-dev-resume-php-wp-fin.pdf', '_blank');
   };
 
   return (
