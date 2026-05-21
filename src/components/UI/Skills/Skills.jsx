@@ -1,24 +1,24 @@
 import './skills.css';
-import reactSvg from '../assets/images/skills/react.svg';
-import javascriptSvg from '../assets/images/skills/javascript.svg';
-import jquerySvg from '../assets/images/skills/jquery.svg';
-import htmlSvg from '../assets/images/skills/html.svg';
-import cssSvg from '../assets/images/skills/css.svg';
-import tailwindCssSvg from '../assets/images/skills/tailwind-css.svg';
-import bootstrapSvg from '../assets/images/skills/bootstrap.svg';
-import bricksSvg from '../assets/images/skills/bricks.svg';
-import phpSvg from '../assets/images/skills/php.svg';
-import laravelSvg from '../assets/images/skills/laravel.svg';
-import wordpressSvg from '../assets/images/skills/wordpress.svg';
-import woocommerceSvg from '../assets/images/skills/woocommerce.svg';
-import mysqlSvg from '../assets/images/skills/mysql.svg';
-import restApiSvg from '../assets/images/skills/rest-api.svg';
-import headlessCmsSvg from '../assets/images/skills/headless-cms.svg';
-import ajaxSvg from '../assets/images/skills/ajax.svg';
-import gitSvg from '../assets/images/skills/git.svg';
-import webflowSvg from '../assets/images/skills/webflow.svg';
-import performanceSvg from '../assets/images/skills/performance.svg';
-import seoSvg from '../assets/images/skills/seo.svg';
+import reactSvg from '../../../assets/images/skills/react.svg';
+import javascriptSvg from '../../../assets/images/skills/javascript.svg';
+import jquerySvg from '../../../assets/images/skills/jquery.svg';
+import htmlSvg from '../../../assets/images/skills/html.svg';
+import cssSvg from '../../../assets/images/skills/css.svg';
+import tailwindCssSvg from '../../../assets/images/skills/tailwind-css.svg';
+import bootstrapSvg from '../../../assets/images/skills/bootstrap.svg';
+import bricksSvg from '../../../assets/images/skills/bricks.svg';
+import phpSvg from '../../../assets/images/skills/php.svg';
+import laravelSvg from '../../../assets/images/skills/laravel.svg';
+import wordpressSvg from '../../../assets/images/skills/wordpress.svg';
+import woocommerceSvg from '../../../assets/images/skills/woocommerce.svg';
+import mysqlSvg from '../../../assets/images/skills/mysql.svg';
+import restApiSvg from '../../../assets/images/skills/rest-api.svg';
+import headlessCmsSvg from '../../../assets/images/skills/headless-cms.svg';
+import ajaxSvg from '../../../assets/images/skills/ajax.svg';
+import gitSvg from '../../../assets/images/skills/git.svg';
+import webflowSvg from '../../../assets/images/skills/webflow.svg';
+import performanceSvg from '../../../assets/images/skills/performance.svg';
+import seoSvg from '../../../assets/images/skills/seo.svg';
 
 function Skills() {
   const skillCategories = {
@@ -54,7 +54,6 @@ function Skills() {
     ],
   };
 
-  // Flatten all skills for grid display
   const allSkills = Object.values(skillCategories).flat();
 
   return (
