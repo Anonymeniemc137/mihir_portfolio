@@ -62,7 +62,7 @@
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background-image: url('src/assets/images/dev-image.jpg');
+  background-image: url('/assets/images/dev-image.jpg');
   background-size: cover;
   background-position: center;
   border: 4px solid #fff;

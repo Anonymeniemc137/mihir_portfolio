@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './headerstyle.css';
 
+const logoPath = '/assets/images/logo.png';
+const resumePath = '/assets/Resume/Mihir-Dave-6y-fullstack-dev-resume-php-wp-fin.pdf';
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,7 +20,7 @@ function Header() {
   };
 
   const handleResumeClick = () => {
-    window.open('src/assets/Resume/Mihir-Dave-6y-fullstack-dev-resume-php-wp-fin.pdf', '_blank');
+    window.open(resumePath, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -26,7 +29,7 @@ function Header() {
         {/* Logo */}
         <div className="logo-container">
           <img
-            src="src/assets/images/logo.png"
+            src={logoPath}
             className="portfolio-logo"
             alt="Site Logo"
           />
