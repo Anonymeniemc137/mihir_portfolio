@@ -1,56 +1,38 @@
 import './skills.css';
-import reactSvg from '../../../assets/images/skills/react.svg';
-import javascriptSvg from '../../../assets/images/skills/javascript.svg';
-import jquerySvg from '../../../assets/images/skills/jquery.svg';
-import htmlSvg from '../../../assets/images/skills/html.svg';
-import cssSvg from '../../../assets/images/skills/css.svg';
-import tailwindCssSvg from '../../../assets/images/skills/tailwind-css.svg';
-import bootstrapSvg from '../../../assets/images/skills/bootstrap.svg';
-import bricksSvg from '../../../assets/images/skills/bricks.svg';
-import phpSvg from '../../../assets/images/skills/php.svg';
-import laravelSvg from '../../../assets/images/skills/laravel.svg';
-import wordpressSvg from '../../../assets/images/skills/wordpress.svg';
-import woocommerceSvg from '../../../assets/images/skills/woocommerce.svg';
-import mysqlSvg from '../../../assets/images/skills/mysql.svg';
-import restApiSvg from '../../../assets/images/skills/rest-api.svg';
-import headlessCmsSvg from '../../../assets/images/skills/headless-cms.svg';
-import ajaxSvg from '../../../assets/images/skills/ajax.svg';
-import gitSvg from '../../../assets/images/skills/git.svg';
-import webflowSvg from '../../../assets/images/skills/webflow.svg';
-import performanceSvg from '../../../assets/images/skills/performance.svg';
-import seoSvg from '../../../assets/images/skills/seo.svg';
+
+const skillIcon = (fileName) => `/assets/images/skills/${fileName}`;
 
 function Skills() {
   const skillCategories = {
     'Frontend Development': [
-      { src: reactSvg, title: 'React' },
-      { src: javascriptSvg, title: 'JavaScript' },
-      { src: jquerySvg, title: 'jQuery' },
-      { src: htmlSvg, title: 'HTML5' },
+      { src: skillIcon('react.svg'), title: 'React' },
+      { src: skillIcon('javascript.svg'), title: 'JavaScript' },
+      { src: skillIcon('jquery.svg'), title: 'jQuery' },
+      { src: skillIcon('html.svg'), title: 'HTML5' },
     ],
     'Styling & Design': [
-      { src: cssSvg, title: 'CSS3' },
-      { src: tailwindCssSvg, title: 'Tailwind CSS' },
-      { src: bootstrapSvg, title: 'Bootstrap' },
-      { src: bricksSvg, title: 'Bricks Builder' },
+      { src: skillIcon('css.svg'), title: 'CSS3' },
+      { src: skillIcon('tailwind-css.svg'), title: 'Tailwind CSS' },
+      { src: skillIcon('bootstrap.svg'), title: 'Bootstrap' },
+      { src: skillIcon('bricks.svg'), title: 'Bricks Builder' },
     ],
     'Backend Development': [
-      { src: phpSvg, title: 'PHP' },
-      { src: laravelSvg, title: 'Laravel' },
-      { src: wordpressSvg, title: 'WordPress' },
-      { src: woocommerceSvg, title: 'WooCommerce' },
+      { src: skillIcon('php.svg'), title: 'PHP' },
+      { src: skillIcon('laravel.svg'), title: 'Laravel' },
+      { src: skillIcon('wordpress.svg'), title: 'WordPress' },
+      { src: skillIcon('woocommerce.svg'), title: 'WooCommerce' },
     ],
     'Databases & APIs': [
-      { src: mysqlSvg, title: 'MySQL' },
-      { src: restApiSvg, title: 'REST APIs' },
-      { src: headlessCmsSvg, title: 'Headless CMS' },
-      { src: ajaxSvg, title: 'AJAX' },
+      { src: skillIcon('mysql.svg'), title: 'MySQL' },
+      { src: skillIcon('rest-api.svg'), title: 'REST APIs' },
+      { src: skillIcon('headless-cms.svg'), title: 'Headless CMS' },
+      { src: skillIcon('ajax.svg'), title: 'AJAX' },
     ],
     'Tools & Optimization': [
-      { src: gitSvg, title: 'Git' },
-      { src: webflowSvg, title: 'Webflow' },
-      { src: performanceSvg, title: 'Performance' },
-      { src: seoSvg, title: 'SEO' },
+      { src: skillIcon('git.svg'), title: 'Git' },
+      { src: skillIcon('webflow.svg'), title: 'Webflow' },
+      { src: skillIcon('performance.svg'), title: 'Performance' },
+      { src: skillIcon('seo.svg'), title: 'SEO' },
     ],
   };
 
